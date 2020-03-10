@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-9">
+        <div id="dropzone">
+            <form action="/Home/Upload" class="dropzone needsclick dz-clickable" id="uploader">
+                <input type="hidden" value="@ViewData["UploadId"]" name="UploadId" id="UploadId" />
+                <div class="dz-message needsclick">
+                    Drop files here or click to upload.<br>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
